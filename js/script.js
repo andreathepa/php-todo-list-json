@@ -16,7 +16,7 @@ createApp({
     methods:{
         updateList(){
             const data = {
-                todoItem: this.todoItem
+               todoItem:  this.todoItem,
             }
             axios.post(this.apiUrl, data, {
                 headers: {'Content-Type': 'multipart/form-data'}

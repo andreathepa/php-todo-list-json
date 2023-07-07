@@ -25,7 +25,7 @@
                             <div class="col-12">
                                 <h1 class="display-1 text-white">Todo List</h1>
                                 <ul class="list-group list-group-flush border-1 border rounded">
-                                    <li v-for="(item, index) in todoList" key="index" class="list-group-item"> {{ item }}</li>
+                                    <li v-for="(item, index) in todoList" key="index" class="list-group-item"> {{ item.text }}</li>
                                 </ul>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                             <div class="col-12">
                                 <div class="input-group mb-3">
                                     <input type="type-text" @keyup.enter="updateList" v-model="todoItem" placeholder="todo" class="form-control">
-                                    <button type="button" @click="updateList" class="btn-outline-success" id="button-add">Aggiungi</button>
+                                    <button type="button" @click="updateList" class="btn-outline-success border-1 border p-2" id="button-add">Aggiungi</button>
                                 </div>
                             </div>
                         </div>
